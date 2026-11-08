@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   User, 
   Mail, 
@@ -19,6 +20,7 @@ import { useCareer } from '../context/CareerContext';
 import API from '../services/api';
 
 export default function ProfilePage({ onNavigateDashboard }) {
+  const navigate = useNavigate();
   const { user, logout } = useAuth();
   const { profile, setProfile, setActiveTab } = useCareer();
 
@@ -69,11 +71,7 @@ export default function ProfilePage({ onNavigateDashboard }) {
 
   const handleLogout = async () => {
     await logout();
-    if (onNavigateDashboard) {
-      onNavigateDashboard();
-    } else if (setActiveTab) {
-      setActiveTab('dashboard');
-    }
+    navigate('/login', { replace: true });
   };
 
   const getInitials = (name) => {

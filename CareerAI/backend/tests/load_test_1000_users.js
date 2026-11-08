@@ -17,7 +17,7 @@ export const options = {
   },
 };
 
-const BASE_URL = __ENV.API_URL || 'http://localhost:5000/api/v1';
+const BASE_URL = __ENV.API_URL || 'https://gnani-ai.onrender.com/api/v1';
 
 export default function () {
   const params = {

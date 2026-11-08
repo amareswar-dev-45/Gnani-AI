@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const rawBaseUrl = import.meta.env.VITE_API_URL || 'https://careerai-3z6c.onrender.com';
+const rawBaseUrl = import.meta.env.VITE_API_URL || 'https://gnani-ai.onrender.com';
 const baseURL = rawBaseUrl.endsWith('/api/v1')
   ? rawBaseUrl
   : `${rawBaseUrl.replace(/\/$/, '')}/api/v1`;

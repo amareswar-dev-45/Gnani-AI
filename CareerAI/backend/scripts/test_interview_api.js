@@ -4,7 +4,7 @@ const env = require('../src/config/env');
 const User = require('../src/models/User');
 const jwt = require('jsonwebtoken');
 
-const BASE_URL = 'http://localhost:5000/api/v1/interview';
+const BASE_URL = process.env.API_URL ? `${process.env.API_URL}/interview` : 'https://gnani-ai.onrender.com/api/v1/interview';
 
 async function runTests() {
   console.log('Connecting to MongoDB...');

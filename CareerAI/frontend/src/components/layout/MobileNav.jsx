@@ -17,7 +17,7 @@ export default function MobileNav() {
   const navigate = useNavigate();
   const location = useLocation();
   const { activeTab, setActiveTab } = useCareer();
-  const { isAuthenticated } = useAuth();
+  const { user, isAuthenticated } = useAuth();
 
   const navItems = [
     { id: 'dashboard', path: '/dashboard', label: 'Home', icon: LayoutDashboard },
