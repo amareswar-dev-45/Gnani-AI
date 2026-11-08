@@ -19,7 +19,7 @@ A production-grade MERN-stack application tailored for student career enablement
 
 - **Frontend**: React (Vite), Tailwind CSS, Lucide Icons, Axios, React Router v6.
 - **Backend**: Node.js, Express, MongoDB (Mongoose), JWT, Firebase Admin Authentication.
-- **AI & Data Research**: Google Gemini API, Groq, Tavily Search API, SerpAPI, Puppeteer.
+- **AI & Data Research**: Gnani AI For STT and TTS,Google Gemini API, Groq, Tavily Search API, SerpAPI, Puppeteer.
 
 ---
 
